@@ -1,0 +1,129 @@
+.App {
+  text-align: center;
+  background: #03001e;  
+  background: -webkit-linear-gradient(to right, #fdeff9, #ec38bc, #7303c0, #03001e); 
+  background: linear-gradient(to right, #fdeff9, #ec38bc, #7303c0, #03001e); 
+  height: 100vh;  
+  padding-top: 60px;
+
+
+  h1{
+    color: white;
+  }
+
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media (min-width: 768px) {
+    .container {
+      width: 650px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 870px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      width: 900px;
+    }
+  }
+
+
+
+  .row-container{
+    background-color: white;
+    padding: 20px;
+    margin-top: 50px;
+    position: relative;
+
+
+    .overlay{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left:0;
+      background-color: rgba(255,255,255,0.7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img{
+        animation: spin 1s infinite linear;
+      }
+    }
+  }
+
+
+  .main-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 10px;
+
+
+  .left-block{
+    display: flex;
+    align-items: center;
+
+    img{
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+    }
+    
+  }
+
+  .right-block{
+    position: relative;
+    display: flex;
+    align-items: center;
+
+
+    img{
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+  }
+
+    
+  }  
+}
+
+
+
+.rc-tooltip-content {
+    position: relative;
+    
+  .statistics{
+    background: rgba(0,0,0, 0.9) !important;
+    position: absolute;
+    right: 0;
+    left: 0;
+    color:white;
+    width: 220px;
+    font-size: 12px;
+    border-radius: 10px;
+    padding: 10px 15px 15px 15px;
+    transform: translate(120px, -50px);
+    display: inline-block;
+    margin: 0 auto;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
